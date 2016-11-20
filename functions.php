@@ -1,5 +1,7 @@
 <?php
 
+include 'inc/CRUD.php';
+
 register_nav_menus(array(
     'main-menu' => __('Menu primaire', 'menu-primaire')
 ));
@@ -27,4 +29,3 @@ if (!function_exists('base_theme_enqueue_styles')) {
 
     add_action('wp_enqueue_scripts', 'base_theme_enqueue_styles');
 }
-
