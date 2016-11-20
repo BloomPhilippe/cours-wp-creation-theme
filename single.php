@@ -9,7 +9,7 @@ get_header(); ?>
     ?>
     <div class="container">
         <div class="jumbotron">
-            <h1><?php echo  get_the_title(); ?> est le titre d'un article</h1>
+            <h1><?php echo  get_the_title(); ?> est le titre d'un type de contenu</h1>
             <p class="lead">
                 <?php
                 echo get_the_content();
