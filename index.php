@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+ /*
+  * Si aucun template n'est trouvé
+  */
+get_header(); ?>
 
 <?php while (have_posts()) :
     the_post();

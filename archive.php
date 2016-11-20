@@ -1,8 +1,15 @@
-<?php get_header();?>
+<?php
+ /*
+  * Template qui permet d'afficher les listes de type de contenu ( post, pages,...)
+  *
+  * Lien pour une catégorie = /category/slug-category
+  */
+get_header();?>
 <div class="album text-muted">
     <div class="container">
         <div class="row album text-muted">
             <?php
+            if (have_posts()):
             while (have_posts()) : the_post();
                 ?>
                 <div class="card">
@@ -11,6 +18,11 @@
                 </div>
                 <?php
             endwhile;
+            else:
+                ?>
+                <h3>Aucun élément trouvé!</h3>
+            <?php
+            endif;
             ?>
         </div>
 

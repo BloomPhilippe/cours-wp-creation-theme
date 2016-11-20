@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+ /*
+  * Template qui permet d'afficher une page
+  */
+get_header(); ?>
 
 <?php while (have_posts()) :
 	the_post();
