@@ -1,4 +1,4 @@
-Un thème WordPress est composé de plusieurs fichier.
+## Un thème WordPress est composé de plusieurs fichier.
 
 1. [style.css](style.css)
 
