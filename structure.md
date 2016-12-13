@@ -66,6 +66,20 @@ Cette function inclut également la barre d'administration, lorsqu'on est connec
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/barre-admin.png)
 
 
+### Inclure [header.php](header.php) et [footer.php](footer.php)
+
+Afin d'inclure le fichier [header.php](header.php) dans vos templates, il suffit d'ajouter la function get_header() au début de votre template.
+
+```
+<?php get_header(); ?>
+```
+
+Afin d'inclure le fichier [footer.php](footer.php) dans vos templates, il suffit d'ajouter la function get_footer() à la fin de votre template.
+
+```
+<?php get_footer(); ?>
+```
+
 
 ### [index.php](index.php)
 
