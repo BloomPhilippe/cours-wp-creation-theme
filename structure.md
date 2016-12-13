@@ -106,3 +106,27 @@ Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir 
 
 Le [page.php](page.php) est le template qui permet d'afficher une page en particulier.
 Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les détails de cette page, le template utilisé afficher cette page sera [page.php](page.php).
+
+
+### Les templates
+
+Les templates sont situés dans le dossier templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
+
+```
+<?php
+/**
+ * Template Name: Contact
+ *
+ */
+```
+
+L'entête est composée du nom du template, exemple Contact.
+Pour tester si le template est pris en compte, il faut aller dans le back-office, 
+dans le formulaire d'ajout/edition d'une page et un select apparaîtra avec la liste de vos templates 
+comme sur l'image ci-dessous.
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/select-template.png)
+
+
+
+
