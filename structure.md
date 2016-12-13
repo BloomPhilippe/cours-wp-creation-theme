@@ -1,3 +1,5 @@
+# Structure d'un thème WordPress
+
 ## Un thème WordPress est composé de plusieurs fichier.
 
 ### [style.css](style.css)
