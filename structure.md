@@ -87,3 +87,15 @@ L’index.php est le template de base dans WordPress, cependant vous pouvez en
 créer d’autres en fonction de votre structure de page.
 
 Par default, le template utilisé pour la page d'accueil du site est [index.php](index.php)
+
+
+### [archive.php](archive.php)
+
+L’[archive.php](archive.php) est le template qui permet d'afficher une liste d'élément tels que les articles, catégorie, etc...
+Imaginons que dans le site, il y a une page blog avec une liste des actualités de votre site, c'est [archive.php](archive.php) qui sera utilisé.
+
+
+### [single.php](single.php)
+
+Le [single.php](single.php) est le template qui permet d'afficher un article en particulier.
+Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir plus de detail sur un article, le template utilisé pour afficher cette article sera [single.php](single.php).
