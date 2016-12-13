@@ -101,3 +101,8 @@ Imaginons que dans le site, il y a une page blog avec une liste des actualités 
 
 Le [single.php](single.php) est le template qui permet d'afficher un article en particulier.
 Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir plus de detail sur un article, le template utilisé pour afficher cette article sera [single.php](single.php).
+
+### [page.php](page.php)
+
+Le [page.php](page.php) est le template qui permet d'afficher une page en particulier.
+Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les détails de cette page, le template utilisé afficher cette page sera [page.php](page.php).
