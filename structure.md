@@ -63,7 +63,7 @@ Cette function ce place juste avant la fin de la balise body
 Cette function inclut également la barre d'administration, lorsqu'on est connecté au WordPress et que l'on navigue sur le site, cette barre est située au dessus de la page.
 
 
-![cover](https://github.com/BloomPhilippe/grid-carousel/blob/master/img/screenshot.png)
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/barre-admin.png)
 
 
 
