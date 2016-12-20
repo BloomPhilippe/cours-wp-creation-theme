@@ -110,7 +110,7 @@ Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les d
 
 ### Les templates
 
-Les templates sont situés dans le dossier templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
+Les templates sont situés dans le **dossier** templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
 
 ```
 <?php
@@ -128,5 +128,11 @@ comme sur l'image ci-dessous.
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/select-template.png)
 
 
+### La hierarchie des templates
 
+La hierarchie des templates dans WordPrzess est très importante, elle décide quel template utiliser.
+Exemple :
 
+Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/wp-template-hierarchy.jpg)
