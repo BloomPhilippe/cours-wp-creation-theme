@@ -24,3 +24,19 @@ Exemple :
 L'url du site est **http://localhost/test.com** et le nom du dossier du theme activé est **wp-base-theme**
 
 get_stylesheet_directory_uri() renvoie http://localhost/test.com/wp-content/themes/wp-base-theme
+
+
+### Via le functions.php
+
+Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et wp_footer() dans footer.php.
+
+```
+ if ( ! function_exists( 'isl_enqueue_styles' ) ) {
+       function nom_de_votre_theme_enqueue_styles() {          
+            wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css');      
+       } 
+            
+       add_action( 'wp_enqueue_scripts', 'nom_de_votre_theme_enqueue_styles' );  
+ }
+
+```
