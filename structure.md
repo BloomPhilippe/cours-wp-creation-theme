@@ -130,7 +130,8 @@ comme sur l'image ci-dessous.
 
 ### La hierarchie des templates
 
-La hierarchie des templates dans WordPrzess est très importante, elle décide quel template utiliser.
+La hierarchie des templates dans WordPress est très importante, elle décide quel template utiliser.
+
 Exemple :
 
 Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
