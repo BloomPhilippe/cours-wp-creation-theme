@@ -3,3 +3,5 @@
 nbproject/*
 .idea
 .idea/*
+extensions/vendor
+extensions/vendor/*
