@@ -6,10 +6,13 @@ get_header(); ?>
 
 <?php while (have_posts()) :
     the_post();
+    $image = get_field('cover');
     ?>
     <div class="container">
         <div class="jumbotron">
             <h1><?php echo  get_the_title(); ?> est le titre d'un type de contenu</h1>
+            <h2><?php echo get_field('sous_tire') ?></h2>
+            <img src="<?php echo $image['url']; ?>" class="img-responsive" alt="Image">
             <p class="lead">
                 <?php
                 echo get_the_content();
