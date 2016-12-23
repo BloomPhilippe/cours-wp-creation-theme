@@ -33,3 +33,8 @@ if (!function_exists('base_theme_enqueue_styles')) {
 
     add_action('wp_enqueue_scripts', 'base_theme_enqueue_styles');
 }
+
+$instTweets = new Tweets();
+$tweets = $instTweets->getTweets(50, 'getbootstrap');
+
+var_dump($tweets);
