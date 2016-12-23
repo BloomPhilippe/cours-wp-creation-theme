@@ -1,6 +1,6 @@
 <?php
 
-include 'inc/CRUD.php';
+include 'inc/addPostType.php';
 include 'extensions/Tweets.php';
 
 register_nav_menus(array(
@@ -35,6 +35,4 @@ if (!function_exists('base_theme_enqueue_styles')) {
 }
 
 $instTweets = new Tweets();
-$tweets = $instTweets->getTweets(50, 'getbootstrap');
-
-var_dump($tweets);
+//$tweets = $instTweets->generate(50, 'getbootstrap');

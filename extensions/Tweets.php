@@ -62,9 +62,32 @@ class Tweets
         return array_splice($result, 0, 25);
     }
 
-    public function generate(){
+    public function generate($limit, $nameTwitter){
+        $category = wp_insert_term(
+            'Tweet',
+            'tweet',
+            array(
+                'description' => 'Tweets',
+                'slug' => 'tweets',
+            )
+        );
+
+        foreach ($this->getTweets($limit, $nameTwitter) as $tweet){
+            $my_post = array(
+                'post_title' => 'Twitter',
+                'post_content' => $tweet->text,
+                'post_status' => 'publish',
+                'post_type' => 'post',
+                'post_author' => 1,
+            );
+            if (!is_null($category)){
+                $my_post['post_category'] = $category;
+            }
+            wp_insert_post($my_post);
+        }
 
     }
+
 
     /**
      * Add cron action in wp-cron
