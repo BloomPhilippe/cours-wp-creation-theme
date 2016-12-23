@@ -50,6 +50,11 @@ class Tweets
 
     }
 
+    /*
+     * Va checrher le dernier tweets
+     * Premier paramètre est la limit de tweet
+     * Deuxième paramètre est le nom de la page twitter
+     */
     public function getTweets($limit, $nameTwitter)
     {
         $this->connection->get("account/verify_credentials");
@@ -62,6 +67,9 @@ class Tweets
         return array_splice($result, 0, 25);
     }
 
+    /*
+     * Crée des nouveau post avec les tweets
+     */
     public function generate($limit, $nameTwitter){
         if(get_term_by('name', 'Tweet', 'category') === false){
             $category = wp_insert_term(
