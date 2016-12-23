@@ -56,21 +56,26 @@ class Tweets
         $result = $this->connection->get('statuses/user_timeline', [
             'screen_name' => $nameTwitter,
             'exclude_replies' => true,
-            'count' => 50
+            'count' => $limit
         ]);
 
         return array_splice($result, 0, 25);
     }
 
     public function generate($limit, $nameTwitter){
-        $category = wp_insert_term(
-            'Tweet',
-            'tweet',
-            array(
-                'description' => 'Tweets',
-                'slug' => 'tweets',
-            )
-        );
+        if(get_term_by('name', 'Tweet', 'category') === false){
+            $category = wp_insert_term(
+                'Tweet',
+                'category',
+                array(
+                    'description' => 'Tweets',
+                    'slug' => 'tweets',
+                )
+            );
+        }else{
+            $term = get_term_by('name', 'Tweet', 'category');
+            $category = array('term_id' => $term->term_id);
+        }
 
         foreach ($this->getTweets($limit, $nameTwitter) as $tweet){
             $my_post = array(
@@ -79,10 +84,9 @@ class Tweets
                 'post_status' => 'publish',
                 'post_type' => 'post',
                 'post_author' => 1,
+                'post_category' => array($category['term_id']),
             );
-            if (!is_null($category)){
-                $my_post['post_category'] = $category;
-            }
+
             wp_insert_post($my_post);
         }
 

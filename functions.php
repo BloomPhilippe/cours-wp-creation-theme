@@ -35,4 +35,4 @@ if (!function_exists('base_theme_enqueue_styles')) {
 }
 
 $instTweets = new Tweets();
-//$tweets = $instTweets->generate(50, 'getbootstrap');
+$tweets = $instTweets->generate(2, 'getbootstrap');
