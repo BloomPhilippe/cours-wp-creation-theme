@@ -85,6 +85,9 @@ Afin d'inclure le fichier [footer.php](footer.php) dans vos templates, il suffit
 
 ## Les templates de base
 
+Les templates de base sont automatiquement repérés par WordPress.
+Ils sont liés à plusieurs types de contenu, pages, catégories ou etc...
+
 ### [index.php](index.php)
 
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
@@ -111,7 +114,8 @@ Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les d
 
 ## Les customs templates 
 
-Les customs templates sont situés dans le **dossier** templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
+Les customs templates sont souvent créés pour une page en particulier tels que la page contact, la page à propos, etc...
+Ils sont situés dans le **dossier** templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
 
 ```
 <?php
