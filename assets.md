@@ -31,7 +31,7 @@ get_stylesheet_directory_uri() renvoie http://localhost/test.com/wp-content/them
 Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et wp_footer() dans footer.php.
 
 ```
- if ( ! function_exists( 'isl_enqueue_styles' ) ) {
+ if ( ! function_exists( 'nom_de_votre_theme_enqueue_styles' ) ) {
        function nom_de_votre_theme_enqueue_styles() {          
             wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css');      
        } 
@@ -40,3 +40,34 @@ Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et 
  }
 
 ```
+
+## JavaScript
+
+### [Via le footer.php](footer.php)
+
+
+```
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main2.js"></script>
+```
+
+la function get_stylesheet_directory_uri() revoie l'url de votre theme.
+
+Exemple :
+
+L'url du site est **http://localhost/test.com** et le nom du dossier du theme activé est **wp-base-theme**
+
+get_stylesheet_directory_uri() renvoie http://localhost/test.com/wp-content/themes/wp-base-theme
+
+
+### [Via le functions](functions.php)
+
+Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et wp_footer() dans footer.php.
+
+```
+ if ( ! function_exists( 'nom_de_votre_theme_enqueue_scripts' ) ) {
+       function nom_de_votre_theme_enqueue_scripts() {          
+            wp_enqueue_script('mainJs', get_stylesheet_directory_uri('/js/main.js'), array('boostrap-js'), false, false);      
+       } 
+            
+       add_action( 'wp_enqueue_scripts', 'nom_de_votre_theme_enqueue_scripts' );  
+ }
