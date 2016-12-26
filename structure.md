@@ -112,6 +112,17 @@ Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir 
 Le [page.php](page.php) est le template qui permet d'afficher une page en particulier.
 Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les détails de cette page, le template utilisé afficher cette page sera [page.php](page.php).
 
+## La hierarchie des templates de base
+
+La hierarchie des templates dans WordPress est très importante, elle décide quel template utiliser.
+
+Exemple :
+
+Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/wp-template-hierarchy.jpg)
+
+
 ## Les customs templates 
 
 Les customs templates sont souvent créés pour une page en particulier tels que la page contact, la page à propos, etc...
@@ -131,14 +142,3 @@ dans le formulaire d'ajout/edition d'une page et un select apparaîtra avec la l
 comme sur l'image ci-dessous.
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/select-template.png)
-
-
-### La hierarchie des templates
-
-La hierarchie des templates dans WordPress est très importante, elle décide quel template utiliser.
-
-Exemple :
-
-Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
-
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/wp-template-hierarchy.jpg)
