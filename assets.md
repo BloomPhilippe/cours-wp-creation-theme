@@ -10,7 +10,7 @@ Dans WordPress, il y a deux manières d'inclure des fichiers CSS ou Javascript.
 
 ## CSS
 
-### Via le header.php
+### [Via le header.php](header.php)
 
 
 ```
@@ -26,7 +26,7 @@ L'url du site est **http://localhost/test.com** et le nom du dossier du theme ac
 get_stylesheet_directory_uri() renvoie http://localhost/test.com/wp-content/themes/wp-base-theme
 
 
-### Via le functions.php
+### [Via le functions](functions.php)
 
 Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et wp_footer() dans footer.php.
 
