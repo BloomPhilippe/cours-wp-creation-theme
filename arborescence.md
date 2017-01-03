@@ -1,6 +1,6 @@
 # Arborescence d'un thème WordPress
 
-## Un thème WordPress est composé de plusieurs fichier.
+## Un thème WordPress est composé de plusieurs fichiers.
 
 ### [style.css](style.css)
 
