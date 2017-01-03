@@ -71,3 +71,9 @@ Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et 
             
        add_action( 'wp_enqueue_scripts', 'nom_de_votre_theme_enqueue_scripts' );  
  }
+
+```
+
+---
+
+[<< Précédent](functions.md)
