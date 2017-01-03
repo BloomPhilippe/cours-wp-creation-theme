@@ -8,7 +8,7 @@ Le style.css possède les informations liées au thème tels que l’auteur, la 
 le nom du thème, l’URL du thème, etc. Dans ce fichier CSS, il n’y aura aucun style
 et il ne sera pas utilisé pour la mise en forme du site.
 
-Ce fichier est obligatoire!
+**Ce fichier est obligatoire!**
 
 Dans le fichier style.css, les valeurs important sont :
 
@@ -95,7 +95,7 @@ Ceux de base sont automatiquement repérés par WordPress.
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
 créer d’autres en fonction de votre structure de page.
 
-Ce fichier est obligatoire!
+**Ce fichier est obligatoire!**
 
 Par default, le template utilisé pour la page d'accueil du site est [index.php](index.php)
 
