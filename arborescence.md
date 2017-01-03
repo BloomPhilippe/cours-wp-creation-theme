@@ -1,4 +1,4 @@
-# Structure d'un thème WordPress
+# Arborescence d'un thème WordPress
 
 ## Un thème WordPress est composé de plusieurs fichier.
 

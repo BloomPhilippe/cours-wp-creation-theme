@@ -1,6 +1,8 @@
-# wp-base-theme
-Thème de base WordPress
+# Thème de base WordPress
 
-1. [Structure](structure.md)
-2. [Assets (js et css)](assets.md)
-3. [Menu](menu.md)
+Ci-dessous, je vais expliquer comment créer un thème Wordpress.
+
+1. [Arborescence](arborescence.md)
+2. [Structure d'un template](template.md)
+3. [Assets (js et css)](assets.md)
+4. [Menu](menu.md)
