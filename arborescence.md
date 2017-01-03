@@ -144,3 +144,7 @@ comme sur l'image ci-dessous.
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/select-template.png)
 
 Si votre template n'est pas repéré par WordPress, veuillez vérifier les espaces entre "Template Name:" et "Contact" car s'il y en a de trop ou trop peu, le template n'est pas pris en compte.
+
+---
+
+[<< Précédent](README.md) | [Suivant >>](template.md)
