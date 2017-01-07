@@ -8,3 +8,5 @@ extensions/vendor/*
 node_modules
 node_modules/*
 composer.lock
+vendor/composer
+vendor/composer/*
