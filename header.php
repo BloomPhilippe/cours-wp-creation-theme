@@ -14,10 +14,16 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/main2.css">
 	<?php wp_head(); ?>
 </head>
 <body>
+<div class="top-bar">
+	<div class="container">
+		<div class="col-md-6 col-sm-12">
+
+		</div>
+	</div>
+</div>
 <nav class="navbar navbar-default" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">

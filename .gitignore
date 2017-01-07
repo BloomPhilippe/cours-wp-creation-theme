@@ -5,3 +5,6 @@ nbproject/*
 .idea/*
 extensions/vendor
 extensions/vendor/*
+node_modules
+node_modules/*
+composer.lock

@@ -1,7 +1,6 @@
 <?php
 
 include 'inc/addPostType.php';
-include 'extensions/Tweets.php';
 
 register_nav_menus(array(
     'main-menu' => __('Menu primaire', 'menu-primaire')
@@ -22,17 +21,13 @@ if (!function_exists('base_theme_enqueue_styles')) {
     {
         wp_deregister_script('jquery');
 
-        wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.js');
-        wp_enqueue_script('boostrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array('jquery'), false, false);
+        wp_enqueue_script('jquery', get_stylesheet_directory_uri().'/vendor/jquery/jquery-2.2.4.js', array(), false, true);
+        wp_enqueue_script('boostrap-js', get_stylesheet_directory_uri().'/vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js', array('jquery'), false, true);
+        wp_enqueue_script('mainJs', get_stylesheet_directory_uri().'/js/main.js', array('boostrap-js'), false, true);
 
-        wp_enqueue_script('mainJs', get_stylesheet_directory_uri('/js/main.js'), array('boostrap-js'), false, false);
-
-        wp_enqueue_style('boostrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
-        wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css');
+        wp_enqueue_style('boostrap-css', get_stylesheet_directory_uri() . '/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css');
+        wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.min.css');
     }
 
     add_action('wp_enqueue_scripts', 'base_theme_enqueue_styles');
 }
-
-$instTweets = new Tweets();
-//$tweets = $instTweets->generate(2, 'getbootstrap');
