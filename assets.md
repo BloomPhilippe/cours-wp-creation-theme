@@ -66,7 +66,7 @@ Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et 
 ```
  if ( ! function_exists( 'nom_de_votre_theme_enqueue_scripts' ) ) {
        function nom_de_votre_theme_enqueue_scripts() {          
-            wp_enqueue_script('mainJs', get_stylesheet_directory_uri('/js/main.js'), array('boostrap-js'), false, false);      
+            wp_enqueue_script('mainJs', get_stylesheet_directory_uri().'/js/main.js', array('boostrap-js'), false, false);      
        } 
             
        add_action( 'wp_enqueue_scripts', 'nom_de_votre_theme_enqueue_scripts' );  
