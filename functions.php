@@ -1,6 +1,7 @@
 <?php
 
 include 'inc/addPostType.php';
+include 'widgets/textBloc.php';
 
 register_nav_menus(array(
     'main-menu' => __('Menu primaire', 'menu-primaire')
