@@ -9,7 +9,7 @@
  */
 function pdw_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Sidebar', 'twentysixteen' ),
+        'name'          => __( 'Sidebar', 'pdw' ),
         'id'            => 'sidebar-1',
         'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentysixteen' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -19,7 +19,7 @@ function pdw_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Content Bottom 1', 'twentysixteen' ),
+        'name'          => __( 'Content Bottom 1', 'pdw' ),
         'id'            => 'sidebar-2',
         'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
