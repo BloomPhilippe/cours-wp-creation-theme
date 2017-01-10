@@ -7,3 +7,4 @@ Ci-dessous, je vais expliquer comment créer un thème Wordpress.
 3. [Le functions.php](functions.md)
 4. [Assets (js et css)](assets.md)
 5. [Menu](menu.md)
+6. [Traduction](traduction.md)

@@ -1,10 +1,17 @@
 # Menu
 
-Il y a plusieurs manière de créer un menu en Wordpress
+Quand vous créez un themes dans WordPress, vous pourrez constater qu'il n'y a pas la possibilité de 
+créer et de modifier un menu dans le back-office.
 
-1. Créer des emplacements de menu
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/sans-menu.png)
 
-Dans functions.php
+
+La première chose à effectuer est de signaler à WordPress qu'il y aura un emplacement pour un ou plusieurs menus dans votre theme.
+ 
+ 
+1. Signaler vos emplacements de menus.
+
+Dans le fichier [functions.php](functions.md), ajouter le code ci-dessous :
 
 ```
 register_nav_menus(
@@ -14,4 +21,17 @@ register_nav_menus(
     )
 );
 ```
+
+la fonction register_nav_menus() signale à WordPress qu'il y aura des menus.
+Cette fonction prend en paramètre un tableau dont les éléments possède une clé et une valeur.
+
+La clé est le nom de l'emplacement du menu.
+La valeur est la description de l'emplacement du menu.
+
+Maintenant, vous avez un nouvel onglet dans le back-office :
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu.png)
+
+
+
 
