@@ -34,4 +34,9 @@ Maintenant, vous avez un nouvel onglet dans le back-office :
 
 
 
+---
+
+[<< Précédent](assets.md) | [Suivant >>](traduction.md)
+
+
 

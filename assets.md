@@ -76,4 +76,4 @@ Pour cette méthode, il est obligatoire d'utiliser wp_head() dans header.php et 
 
 ---
 
-[<< Précédent](functions.md)
+[<< Précédent](functions.md) | [Suivant >>](menu.md)
