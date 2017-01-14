@@ -6,7 +6,7 @@ Il est préférable de rendre traductible ce genre de texte car si un jour votre
 
 ## Etapes
 
-1. Ajouter un domaine de texte
+### Ajouter un domaine de texte
 
 Grâce au code ci-dessous, vous signalez à WordPress qu'il doit vérifier dans le dossier 
 languages de votre thème pour les traductions.
@@ -37,7 +37,7 @@ Le premier paramètre est le slug parent de vos traductions grâce au quel WordP
 Le deuxième paramètre est le chemin vers le dossier où se trouve vos traduction
 
 
-2. Ajouter vous tranductions dans vos templates
+### Ajouter vous tranductions dans vos templates
 
 ```
 <?php _e('Voir plus actualités', 'slug-de-mes-traductions'); ?>
@@ -51,7 +51,7 @@ Le deuxième paramètre est le slug parent de vos traductions ainsi WordPress sa
 
 
 
-3. Ajouter un plugin pour modifier vos fichiers po et mo
+### Ajouter un plugin pour modifier vos fichiers po et mo
 
 Loco translate
 
