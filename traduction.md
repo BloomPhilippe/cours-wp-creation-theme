@@ -54,3 +54,7 @@ Le deuxième paramètre est le slug parent de vos traductions ainsi WordPress sa
 3. Ajouter un plugin pour modifier vos fichiers po et mo
 
 Loco translate
+
+---
+
+[<< Précédent](menu.md) | [Suivant >>](widget.md)
