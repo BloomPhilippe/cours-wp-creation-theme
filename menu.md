@@ -9,7 +9,7 @@ créer et de modifier un menu dans le back-office.
 La première chose à effectuer est de signaler à WordPress qu'il y aura un emplacement pour un ou plusieurs menus dans votre theme.
  
  
-1. Signaler vos emplacements de menus.
+## Signaler vos emplacements de menus.
 
 Dans le fichier [functions.php](functions.md), ajouter le code ci-dessous :
 
@@ -32,7 +32,7 @@ Maintenant, vous avez un nouvel onglet dans le back-office :
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu.png)
 
-
+## Afficher son menu dans les templates.
 
 ---
 
