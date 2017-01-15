@@ -69,6 +69,12 @@ wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 ?>
 ´´´
 
+wp_nav_menu() prend plusieurs paramètre mais le plus important est "menu" qui est égale au nom du menu à afficher ou à l'id du menu à afficher ou le slug du menu afficher.
+
+Vous pouvez visualiser mon exemple dans [header.php](header.php)
+
+Plus plus d'information, [cliquer ici](https://developer.wordpress.org/reference/functions/wp_nav_menu/)
+
 
 ---
 
