@@ -32,7 +32,28 @@ Maintenant, vous avez un nouvel onglet dans le back-office :
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu.png)
 
+
+## Créer votre menu via le backoffice.
+
+- Aller dans le backoffice (l'administration), dans apparence et menu.
+- Ecrire le nom de votre menu et cliquer sur créer menu
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-2.png)
+
+- Lier vos pages, articles ou catégories à votre menu
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-3.png)
+
+- Si vous avez plusieurs emplacement de menu (menu principal et menu footer), selectinner l'emplacement adéquat.
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-4.png)
+
+- Cliquer sur enregistrer le menu
+
 ## Afficher son menu dans les templates.
+
+
+
 
 ---
 
