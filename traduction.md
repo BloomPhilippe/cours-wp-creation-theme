@@ -8,12 +8,13 @@ Il est préférable de rendre traductible ce genre de texte car si un jour votre
 
 ### 1. Ajouter un domaine de texte
 
+Le première étapes est de signaler à WordPress que votre thème possède des fichiers de traduction.
 
 #### Via le [styles.css](style.css)
 
-´´´
+```
 Text Domain:    client
-´´´
+```
 
 #### Via le [functions.php](functions.php)
 
