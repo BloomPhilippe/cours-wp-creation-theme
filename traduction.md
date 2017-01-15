@@ -111,10 +111,13 @@ Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez p
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-6.png)
 
 
-- Cliquer sur New language pour ajouter un nouveau fichier de traduction pour une langue à votre thème
+- Cliquer sur New language pour ajouter un nouveau fichier de traduction pour une langue (.po) à votre thème
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-4.png)
 
+- Selectionner la langue (pour l'exemple français) et choisir la location (emplacement) de votre thème
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-7.png)
 
 
 
