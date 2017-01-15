@@ -12,8 +12,8 @@ Le première étapes est de signaler à WordPress que votre thème possède des 
 Généralement, le thème possède un dossier languages dans lequel va être placé vos fichier de traduction (.po et .mo).
  
 Il y as deux manières d'effectuer ce signalement, via style.css ou via functions.php. 
-C'est soit une méthode ou l'autre mais pas les deux.
-De plus, celle via le style.css prendra le pas sur l'autre, elle a plus d'impact.
+
+La méthode via le style.css prendra le pas sur l'autre, elle a plus d'impact.
 
 #### Via le [styles.css](style.css)
 
@@ -22,7 +22,10 @@ Text Domain:    wp-theme-base-translate
 ```
 
 wp-theme-base-translate permet au moment d'afficher une traduction, de dire à WordPress où trouver les traductions...
-Pour WordPress, wp-theme-base-translate est égale à get_template_directory() . '/languages'.
+Avec cette méthode, WordPress va chercher vos traduction dans wp-content/languages/themes .
+
+**Je déconseille cette méthodes car si vous avez besoin de ce theme sur plusieurs site, il faudra créer à nouveau vos traductions!**
+**Donc si la ligne "Text Domain" se trouve dans votre thème, supprimer-la !**
 
 #### Via le [functions.php](functions.php)
 
@@ -130,15 +133,30 @@ Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez p
 
 ### 3. Ajouter vous tranductions dans vos templates
 
+Exemple de code ci-dessous que vous pouvez trouver dans [header.php](header.php) :
+
 ```
-<?php _e('Voir plus actualités', 'slug-de-mes-traductions'); ?>
+<?php _e('La traduction de Philippe Bloom', 'wp-theme-base-translate'); ?>
 ```
 
 **_e()** signale à WordPress que le texte est traductible et effectue un echo.
 
-Le premier paramètre est l'identifiant du texte à aller chercher qui se trouve dans un fichier de traduction
+Le premier paramètre est l'identifiant du texte (msgid) à aller chercher qui se trouve dans un fichier de traduction
 
-Le deuxième paramètre est le slug parent de vos traductions ainsi WordPress sait dans quel dossier vérifier.
+Le deuxième paramètre est le domaine de vos traductions ainsi WordPress sait dans quel dossier vérifier.
+
+### 3. Visualiser et tester le changement de traduction
+
+- Actuellement mon site est en français donc "La traduction de Philippe Bloom" est égale à sa valeur en français
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-10.png)
+
+- Aller dans le backoffice, dans réglages (settings), dans l'onglet générale et changer la langue du site
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-10.png)
+
+- Cliquer sur enregistrer et retourner sur le front
+
 
 
 ### Liens utiles : 

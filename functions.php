@@ -34,7 +34,19 @@ if (!function_exists('base_theme_enqueue_styles')) {
     add_action('wp_enqueue_scripts', 'base_theme_enqueue_styles');
 }
 
-/*
- * Ajout du champs "Image à la Une" dans les articles
- */
-add_theme_support( 'post-thumbnails' );
+
+
+add_action( 'after_setup_theme', 'pdw_theme_setup' );
+
+function pdw_theme_setup(){
+
+    /*
+     * Signale à WordPress que votre theme possède des traductions
+     */
+    load_theme_textdomain( 'wp-theme-base-translate', get_template_directory() . '/languages' );
+
+    /*
+     * Ajout du champs "Image à la Une" dans les articles
+     */
+    add_theme_support( 'post-thumbnails' );
+}
