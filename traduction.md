@@ -58,9 +58,33 @@ Le deuxième paramètre est le chemin vers le dossier où se trouve vos traducti
 
 ### 2. Ajouter un plugin pour créer ou modifier vos fichiers po et mo
 
+Vos traductions sont dans deux fichiers dans les .mo et .po.
+
+Les fichiers .mo sont en format binaire qui sont lu par WordPress pour trouver les traductions, ces fichiers sont illisible pour l'homme. 
+Ils sont générés à partir d'un fichier .po.
+
+Les fichiers .po permettent de créer et de modifier vos traductions.
+Ils sont ensuite transformés en fichier .mo.
+
+Il y a plusieurs manière de modifier ces fichiers, via un plugin comme Loco Translate ou via PoEdit que est un logiciel de traduction.
+
 - Installer Loco Translate
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-1.png)
+
+- Aller dans l'onglet Loco Translate, vous pouvez constater qu'il a repéré que votre thème à un emplacement pour des traductions.
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-2.png)
+
+- Cliquer sur le nom de votre thème
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-3.png)
+
+- Ajouter un nouveau fichier de traduction à votre thème
+
+
+
+
 
 ### 3. Ajouter vous tranductions dans vos templates
 
@@ -75,6 +99,12 @@ Le premier paramètre est l'identifiant du texte à aller chercher qui se trouve
 Le deuxième paramètre est le slug parent de vos traductions ainsi WordPress sait dans quel dossier vérifier.
 
 
+### Liens utiles : 
+
+- Formation sur la traduction d'une application PHP, [cliquer ici](https://www.grafikart.fr/tutoriels/php/internationaliser-site-gettext-104)
+- Formation sur la traduction d'une application PHP, [cliquer ici](http://tassedecafe.org/fr/internationaliser-site-web-php-gettext-2878)
+- Pour plus d'informations, [cliquer ici](http://blog.nalis.fr/?post/2011/02/08/traduction-et-multilinguisme-d-un-site-web-%3A-Gettext-et-poedit-tutoriel-et-exemple)
+- Pour plus d'informations, [cliquer ici](https://developer.wordpress.org/themes/functionality/localization/)
 
 
 ---
