@@ -9,11 +9,16 @@ Il est préférable de rendre traductible ce genre de texte car si un jour votre
 ### 1. Ajouter un domaine de texte
 
 Le première étapes est de signaler à WordPress que votre thème possède des fichiers de traduction.
+Généralement, le thème possède un dossier languages dans lequel va être placé vos fichier de traduction (.po et .mo).
+ 
+Il y as deux manières d'effectuer ce signalement, via style.css ou via functions.php. 
+C'est soit une méthode ou l'autre mais pas les deux.
+De plus, celle via le style.css prendra le pas sur l'autre.
 
 #### Via le [styles.css](style.css)
 
 ```
-Text Domain:    client
+Text Domain:    wp-theme-base
 ```
 
 #### Via le [functions.php](functions.php)
@@ -26,7 +31,7 @@ languages de votre thème pour les traductions.
 add_action( 'after_setup_theme', 'pdw_theme_setup' );
 
 function pdw_theme_setup(){
-    load_theme_textdomain( 'slug-de-mes-traductions', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'wp-theme-base', get_template_directory() . '/languages' );
 }
 ```
 
