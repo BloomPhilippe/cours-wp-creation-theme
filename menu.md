@@ -58,7 +58,7 @@ Il y a plusieurs manières d'afficher un menu mais je vais vous montrer celle qu
 
 wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 
-´´´
+```
 <?php
     $args = array(
         'menu' => 'Menu 1',
@@ -67,7 +67,7 @@ wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
     );
     wp_nav_menu($args);
 ?>
-´´´
+```
 
 wp_nav_menu() prend plusieurs paramètre mais le plus important est "menu" qui est égale au nom du menu à afficher ou à l'id du menu à afficher ou le slug du menu afficher.
 
