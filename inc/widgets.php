@@ -1,13 +1,5 @@
-# Les widgets
+<?php
 
-Les widgets sont des blocs de tout types à placer dans vos templates.
-Ils peuvent être un bloc de texte, un bloc de menu, un bloc listant les dernières actualités, etc...
-
-## Signaler à WordPress vos widgets
- 
-Dans le fichier [functions.php](functions.php), inserer le code ci-dessous :
-
-```
 function wp_base_theme_widgets_init() {
     for ($i = 1; $i <= 10; $i++) {
         register_sidebar( array(
@@ -22,9 +14,3 @@ function wp_base_theme_widgets_init() {
     }
 }
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
-```
-
-
----
-
-[<< Précédent](traduction.md)

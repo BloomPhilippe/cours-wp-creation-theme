@@ -1,15 +1,16 @@
 <?php
 
 include 'inc/addPostType.php';
-include 'widgets/textBloc.php';
-include 'widgets/custom.php';
+include 'inc/widgets.php';
 
+/*
+ * Signale à WordPress que le thème possède des menus
+ */
 register_nav_menus(array(
     'main-menu' => __('Menu primaire', 'menu-primaire')
 ));
 
 if (!function_exists('base_theme_enqueue_styles')) {
-
 	/**
 	 * Enqueue scripts
 	 *
@@ -34,11 +35,7 @@ if (!function_exists('base_theme_enqueue_styles')) {
     add_action('wp_enqueue_scripts', 'base_theme_enqueue_styles');
 }
 
-
-
-add_action( 'after_setup_theme', 'pdw_theme_setup' );
-
-function pdw_theme_setup(){
+function wp_base_theme_theme_setup(){
 
     /*
      * Signale à WordPress que votre theme possède des traductions
@@ -50,3 +47,4 @@ function pdw_theme_setup(){
      */
     add_theme_support( 'post-thumbnails' );
 }
+add_action( 'after_setup_theme', 'wp_base_theme_theme_setup' );

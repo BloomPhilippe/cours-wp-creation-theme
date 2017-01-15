@@ -3,7 +3,7 @@
   * Si aucun template n'est trouvé
   */
 get_header(); ?>
-<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<?php dynamic_sidebar( 'text-bloc-1' ); ?>
 <?php while (have_posts()) :
     the_post();
     echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' );
