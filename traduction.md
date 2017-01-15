@@ -110,7 +110,6 @@ Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez p
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-6.png)
 
-
 - Cliquer sur New language pour ajouter un nouveau fichier de traduction pour une langue (.po) à votre thème
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-4.png)
@@ -119,8 +118,15 @@ Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez p
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-7.png)
 
+- Cliquer sur Start tanslating et vous arriverez dans l'interface qui permet de traduire vos clé (msgid) et de générer vos fichiers .mo
 
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-8.png)
 
+- Dés que vous aller modifier une traduction, le bouton Save va changer de couleur, n'oubliez pas de cliquer dessus afin de mettre à jour le fichier .mo.
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-9.png)
+
+- Faite pareil pour chaque langue !
 
 ### 3. Ajouter vous tranductions dans vos templates
 
