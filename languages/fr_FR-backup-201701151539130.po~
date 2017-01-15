@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thème de base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 13:49+0000\n"
-"PO-Revision-Date: 2017-01-15 13:49+0000\n"
+"POT-Creation-Date: 2017-01-15 14:59+0000\n"
+"PO-Revision-Date: 2017-01-15 15:39+0000\n"
 "Last-Translator: admin <bloom_phil@hotmail.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -12,6 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
+
+#: header.php:36
+msgid "La traduction de Philippe Bloom"
+msgstr ""
 
 #. Name of the template
 msgid "Contact"
@@ -31,7 +35,4 @@ msgstr ""
 
 #. Author of the theme
 msgid "BloomPhilippe"
-msgstr ""
-
-msgid "La traduction de Philippe Bloom"
 msgstr ""
