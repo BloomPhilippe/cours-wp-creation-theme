@@ -52,7 +52,22 @@ Maintenant, vous avez un nouvel onglet dans le back-office :
 
 ## Afficher son menu dans les templates.
 
+Il y a plusieurs manières d'afficher un menu mais je vais vous montrer celle qui utilise wp_nav_menu().
 
+### wp_nav_menu()
+
+wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
+
+´´´
+<?php
+    $args = array(
+        'menu' => 'Menu 1',
+        'container' => 'ul',
+        'menu_class' => 'nav navbar-nav',
+    );
+    wp_nav_menu($args);
+?>
+´´´
 
 
 ---
