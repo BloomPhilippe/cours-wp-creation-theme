@@ -28,9 +28,10 @@ function wp_base_theme_widgets_init() {
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
 ```
 
-Ce code va signaler à WordPress 10 bloc de texte et dans le back-office, vous constatez qu'il y a un nouvel onglet widgets
+Ce code va signaler à WordPress 10 bloc de texte et dans le back-office, vous constatez qu'il y a un nouvel onglet widgets.
+Dans ce nouvel onglet, il y vos bloc de texte.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-1.png)
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-2.png)
 
 
 
