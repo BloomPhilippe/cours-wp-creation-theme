@@ -3,6 +3,10 @@
 Les widgets sont des blocs de tout types à placer dans vos templates.
 Ils peuvent être un bloc de texte, un bloc de menu, un bloc listant les dernières actualités, etc...
 
+De base, votre theme ne possède pas l'onglet Widget
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-0.png)
+
 ## Signaler à WordPress vos widgets
  
 Dans le fichier [functions.php](functions.php), inserer le code ci-dessous :
@@ -23,6 +27,12 @@ function wp_base_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
 ```
+
+Ce code va signaler à WordPress 10 bloc de texte et dans le back-office, vous constatez qu'il y a un nouvel onglet widgets
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-1.png)
+
+
 
 
 ---
