@@ -13,25 +13,29 @@ Généralement, le thème possède un dossier languages dans lequel va être pla
  
 Il y as deux manières d'effectuer ce signalement, via style.css ou via functions.php. 
 C'est soit une méthode ou l'autre mais pas les deux.
-De plus, celle via le style.css prendra le pas sur l'autre.
+De plus, celle via le style.css prendra le pas sur l'autre, elle a plus d'impact.
 
 #### Via le [styles.css](style.css)
 
 ```
-Text Domain:    wp-theme-base
+Text Domain:    wp-theme-base-translate
 ```
+
+wp-theme-base-translate permet au moment d'afficher une traduction, de dire à WordPress où trouver les traductions...
+Pour WordPress, wp-theme-base-translate est égale à get_template_directory() . '/languages'.
 
 #### Via le [functions.php](functions.php)
 
 Grâce au code ci-dessous, vous signalez à WordPress qu'il doit vérifier dans le dossier 
-languages de votre thème pour les traductions.
- 
+languages de votre thème pour trouver les traductions lié au thème.
+
+**Cette manière ne sera pas prise en compte si vous l'avez déjà ajouté dans le** [styles.css](style.css)
 
 ```
 add_action( 'after_setup_theme', 'pdw_theme_setup' );
 
 function pdw_theme_setup(){
-    load_theme_textdomain( 'wp-theme-base', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'wp-theme-base-translate', get_template_directory() . '/languages' );
 }
 ```
 
@@ -52,7 +56,13 @@ Le premier paramètre est le slug parent de vos traductions grâce au quel WordP
 Le deuxième paramètre est le chemin vers le dossier où se trouve vos traduction
 
 
-### 2. Ajouter vous tranductions dans vos templates
+### 2. Ajouter un plugin pour créer ou modifier vos fichiers po et mo
+
+- Installer Loco Translate
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-1.png)
+
+### 3. Ajouter vous tranductions dans vos templates
 
 ```
 <?php _e('Voir plus actualités', 'slug-de-mes-traductions'); ?>
@@ -66,9 +76,6 @@ Le deuxième paramètre est le slug parent de vos traductions ainsi WordPress sa
 
 
 
-### 3. Ajouter un plugin pour modifier vos fichiers po et mo
-
-Loco translate
 
 ---
 
