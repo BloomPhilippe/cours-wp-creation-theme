@@ -1,0 +1,35 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-15 13:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the template
+msgid "Contact"
+msgstr ""
+
+#. Name of the theme
+msgid "Thème de base"
+msgstr ""
+
+#. Description of the theme
+msgid "Theme de base WordPress réalisé par Bloom Philippe"
+msgstr ""
+
+#. URI of the theme
+msgid "http://bloomandweb.be/"
+msgstr ""
+
+#. Author of the theme
+msgid "BloomPhilippe"
+msgstr ""

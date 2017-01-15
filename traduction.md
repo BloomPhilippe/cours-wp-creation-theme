@@ -66,6 +66,25 @@ Ils sont générés à partir d'un fichier .po.
 Les fichiers .po permettent de créer et de modifier vos traductions.
 Ils sont ensuite transformés en fichier .mo.
 
+Exemple d'une partie d'un fichier .po pour le français:
+
+```
+msgid "more"
+msgstr "plus"
+```
+
+Exemple d'une partie d'un fichier .po pour l'anglais:
+
+```
+msgid "more"
+msgstr "more"
+```
+
+Dans vos templates, seule msgid sera utilisé.
+Si votre site est en français, WordPress va chercher dans le fichier fr_FR.mo à quoi correspond "more"
+Si votre site est en anglais, WordPress va chercher dans le fichier en_EN.mo à quoi correspond "more"
+
+
 Il y a plusieurs manière de modifier ces fichiers, via un plugin comme Loco Translate ou via PoEdit que est un logiciel de traduction.
 
 - Installer Loco Translate
@@ -80,7 +99,21 @@ Il y a plusieurs manière de modifier ces fichiers, via un plugin comme Loco Tra
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-3.png)
 
-- Ajouter un nouveau fichier de traduction à votre thème
+- Cliquer sur Create template
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-5.png)
+
+- Cliquer encore sur Create template
+
+Créer un template permet de créer un fichier .pot qui sera une base pour vos futurs .po.
+Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez pas besoin de les écrire à chanque fichier .po (fr, en, nl, etc...)
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-6.png)
+
+
+- Cliquer sur New language pour ajouter un nouveau fichier de traduction pour une langue à votre thème
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-4.png)
 
 
 
