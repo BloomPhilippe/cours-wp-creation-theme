@@ -33,8 +33,41 @@ Dans ce nouvel onglet, il y vos bloc de texte.
 
 ![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-2.png)
 
+## Configurer vos blocs de textes (widgets)
 
+- Dans le back-office, dans Apparence, dans l'onglet widgets, faites glisser un bloc de texte qui se trouve à gauche
 
+Il est possible de mettre n'import quel bloc situé à gauche dans vos widgets!
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-4.png)
+
+- Vous devez obtenir le résultat suivant
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-3.png)
+
+- Taper du texts et cliquer sur enregistrer
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-5.png)
+
+## Afficher vos widgets dans vos templates
+
+- placer le code ci-dessous dans un template
+
+```
+<?php dynamic_sidebar( 'text-bloc-1' ); ?>
+```
+
+le paramètre de la fonction dynamic_sidebar() est l'id du widget précédemment signaler
+
+```
+'id' => 'text-bloc-'.$i,
+```
+
+- Visualiser le résultat
+
+J'ai placé le widget dans [index.php](index.php)
+
+![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/widget-6.png)
 
 ---
 
