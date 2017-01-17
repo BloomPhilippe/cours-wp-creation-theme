@@ -88,6 +88,7 @@ function wp_base_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
 ```
+
 ## Les filtres WordPress
 
 Les filtres permettent de modifier un fonction existante dans WordPress
@@ -99,6 +100,7 @@ add_filter( 'the_title', function( $title ) { return '<strong>' . $title . '</st
 ```
 
 Ci-dessus, vous modifier la fonction the_title()  en y ajoutant les balises <strong></strong>.
+
 
 ## les hooks WordPress (add_action())
 
@@ -116,7 +118,7 @@ add_action( 'save_post', 'monAction');
 ```
 
 Lorsque WordPress va executer la fonction save_post(), ma fonction va s'executer.
- 
+
 
 ## Liens utiles
 
