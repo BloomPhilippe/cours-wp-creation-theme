@@ -115,7 +115,8 @@ function monAction(){
 add_action( 'save_post', 'monAction');
 ```
 
-Lorsque WordPress va executer la fonction save_post(), ma fonction va s'executer. 
+Lorsque WordPress va executer la fonction save_post(), ma fonction va s'executer.
+ 
 
 ## Liens utiles
 
