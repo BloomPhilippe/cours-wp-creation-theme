@@ -88,7 +88,40 @@ function wp_base_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
 ```
+## Les filtres WordPress
 
+Les filtres permettent de modifier un fonction existante dans WordPress
+
+Exemple:
+
+```
+add_filter( 'the_title', function( $title ) { return '<strong>' . $title . '</strong>'; } );
+```
+
+Ci-dessus, vous modifier la fonction the_title()  en y ajoutant les balises <strong></strong>.
+
+## les hooks WordPress (add_action())
+
+Dans WordPress, vous pouvez executer vos fonctions à un moment précis, lors d'un événements dans l'execution de WordPress ou lorsqu'une fonction en particulier est utilisée.
+
+Exemple:
+
+```
+function monAction(){
+	
+	echo 'toto';
+}
+
+add_action( 'save_post', 'monAction');
+```
+
+Lorsque WordPress va executer la fonction save_post(), ma fonction va s'executer. 
+
+## Liens utiles
+
+- [Informations sur les fonctions, filtres, hooks dans WordPress](https://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters)
+
+- [Les filtres WordPress](https://developer.wordpress.org/reference/functions/add_filter/)
 
 ---
 
