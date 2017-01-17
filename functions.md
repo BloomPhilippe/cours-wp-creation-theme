@@ -20,6 +20,9 @@ Le [functions.php](functions.php) est considéré comme un controller global, un
 
 ## Exemple d'utilisation
 
+Tous les exemples ci-dessous se trouve dans d'autre chapitre avec un complément d'explication.
+
+
 - Signaler à WordPress que vous avec des menus
 
 ```
@@ -47,6 +50,44 @@ register_nav_menus(array(
 ```
 add_theme_support( 'post-thumbnails' );
 ```
+
+- Ajouter des nouveaux types de contenu (article, page, etc...)
+
+```
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'formation',
+        array(
+            'labels' => array(
+                'name' => __( 'Formations' ),
+                'singular_name' => __( 'Formation' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+```
+
+- Signaler à WordPress à que votre thème possède des widget
+
+```
+function wp_base_theme_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => __( 'Bloc de texte', 'wp-theme-base-translate' ),
+        'id'            => 'text-bloc',
+        'description'   => __( 'Ajout d\'un bloc texte ou autre sur le site', 'wp-theme-base-translate' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
+```
+
+
 ---
 
 [<< Précédent](template.md) | [Suivant >>](assets.md)
