@@ -10,7 +10,13 @@ Le [functions.php](functions.php) est considéré comme un controller global, un
 
 - Il permet d'utiliser les hooks et les filtres WordPress, de modifier les fonctions de base WordPress etc...
 
+## Conseils
+
 **IL est préférable de ne pas avoir de logique dans un template!** 
+
+**Si vous avez du code dupliqué dans plusieurs template, ne serait-il pas plus logique de créer un fonction ?** 
+
+
 
 ## Exemple d'utilisation
 
