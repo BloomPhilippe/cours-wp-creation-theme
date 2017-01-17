@@ -16,6 +16,8 @@ Le [functions.php](functions.php) est considéré comme un controller global, un
 
 **Si vous avez du code dupliqué dans plusieurs template, ne serait-il pas plus logique de créer un fonction ?** 
 
+**Par soucis de facilité de lecture et de propreté du code, n'hésitez à effectuer des includes** 
+
 
 
 ## Exemple d'utilisation
