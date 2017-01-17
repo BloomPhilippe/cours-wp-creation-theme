@@ -126,6 +126,8 @@ Lorsque WordPress va executer la fonction save_post(), ma fonction va s'executer
 
 - [Les filtres WordPress](https://developer.wordpress.org/reference/functions/add_filter/)
 
+- [Le functions.php](https://codex.wordpress.org/Functions_File_Explained)
+
 ---
 
 [<< Précédent](template.md) | [Suivant >>](assets.md)
