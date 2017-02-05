@@ -38,13 +38,19 @@
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
-		<?php
-		$args = array(
-			'menu' => 'Menu 1',
-			'container' => 'ul',
-			'menu_class' => 'nav navbar-nav',
-		);
-		wp_nav_menu($args);
-		?>
+		<ul class="nav navbar-nav">
+			<?php
+			$args = array(
+				'menu' => 'Menu 1',
+				'container_class' => false,
+				'items_wrap' => '%3$s',
+				'container' => false
+			);
+			wp_nav_menu($args);
+			?>
+			<li>
+				<a href="<?php echo get_post_type_archive_link( 'formation' ); ?>">Formation Archive</a>
+			</li>
+		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
