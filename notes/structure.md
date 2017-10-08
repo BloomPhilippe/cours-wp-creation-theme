@@ -1,5 +1,9 @@
 # Arborescence d'un thème WordPress
 
+## Schémas d'une structure de base
+
+![cover](../images/structure-theme-wp.png)
+
 ## Un thème WordPress est composé de plusieurs fichiers.
 
 ### [style.css](../style.css)

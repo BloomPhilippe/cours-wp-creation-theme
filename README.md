@@ -5,8 +5,8 @@ Je vais vous expliquer comment créer un thème de base en WordPress.
 
 ## Table des matières
 
-1. [Arborescence](notes/arborescence.md)
-2. [Structure d'un template](notes/template.md)
+1. [Structure](notes/structure.md)
+2. [Les templates](notes/template.md)
 3. [Le functions.php](notes/functions.md)
 4. [Assets (js et css)](notes/assets.md)
 5. [Menu](notes/menu.md)

@@ -78,4 +78,4 @@ get_footer() permet d'inclure le fichier footer.php
 
 ---
 
-[<< Précédent](arborescence.md) | [Suivant >>](functions.md)
+[<< Précédent](structure.md) | [Suivant >>](functions.md)
