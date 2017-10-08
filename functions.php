@@ -1,7 +1,7 @@
 <?php
 
-include 'inc/addPostType.php';
-include 'inc/widgets.php';
+//include 'inc/addPostType.php';
+//include 'inc/widgets.php';
 
 /*
  * Signale à WordPress que le thème possède des menus
@@ -22,13 +22,16 @@ if (!function_exists('base_theme_enqueue_styles')) {
 	 */
     function base_theme_enqueue_styles()
     {
+        /*
         wp_deregister_script('jquery');
 
         wp_enqueue_script('jquery', get_stylesheet_directory_uri().'/vendor/jquery/jquery-2.2.4.js', array(), false, true);
         wp_enqueue_script('boostrap-js', get_stylesheet_directory_uri().'/vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js', array('jquery'), false, true);
+
+        */
         wp_enqueue_script('mainJs', get_stylesheet_directory_uri().'/js/main.js', array('boostrap-js'), false, true);
 
-        wp_enqueue_style('boostrap-css', get_stylesheet_directory_uri() . '/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css');
+        //wp_enqueue_style('boostrap-css', get_stylesheet_directory_uri() . '/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css');
         wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.min.css');
     }
 

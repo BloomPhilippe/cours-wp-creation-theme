@@ -1,22 +1,19 @@
 <?php
- /*
-  * Template qui permet d'afficher une page
-  */
-get_header(); ?>
+get_header();
+?>
 
 <?php while (have_posts()) :
-	the_post();
-	?>
-	<div class="container">
-		<div class="jumbotron">
-			<h1><?php echo  get_the_title(); ?></h1>
-			<p class="lead">
-				<?php
-				echo get_the_content();
-				?>
-			</p>
-		</div>
-	</div>
-	<?php
+    the_post();
+    ?>
+    <div>
+        <h1><?php echo  get_the_title(); ?> est une page</h1>
+        <p>
+            <?php
+            echo get_the_content();
+            ?>
+        </p>
+    </div>
+    <?php
 endwhile; ?>
 <?php get_footer(); ?>
+
