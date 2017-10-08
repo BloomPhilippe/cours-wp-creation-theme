@@ -3,9 +3,12 @@
 Les templates sont les fichiers qui permettent d'afficher un type de contenu (articles, pages, etc...).
 Ceux de base sont automatiquement repérés par WordPress.
 
-**Ce fichier est obligatoire!**
+### [index.php](../index.php)
 
-Par default, le template utilisé pour la page d'accueil du site est [index.php](../index.php)
+L’index.php est le template de base dans WordPress, cependant vous pouvez en
+créer d’autres en fonction de votre structure de page.
+
+**Ce fichier est obligatoire!**
 
 
 ## [archive.php](../archive.php)
