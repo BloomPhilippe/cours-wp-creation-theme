@@ -78,7 +78,5 @@ Plus plus d'information, [cliquer ici](https://developer.wordpress.org/reference
 
 ---
 
-[<< Précédent](assets.md) | [Suivant >>](traduction.md)
-
-
+[:back:](assets.md) | [:soon:](traduction.md)
 

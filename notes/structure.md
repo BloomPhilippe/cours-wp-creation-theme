@@ -106,6 +106,7 @@ présent pour le différencier des autres thèmes installés.
 
 
 
+
 ---
 
-[<< Précédent](../README.md) | [Suivant >>](template.md)
+[:back:](../README.md) | [:soon:](template.md)

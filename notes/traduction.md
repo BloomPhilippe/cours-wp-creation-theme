@@ -167,6 +167,7 @@ Le deuxième paramètre est le domaine de vos traductions ainsi WordPress sait d
 - Pour plus d'informations, [cliquer ici](https://developer.wordpress.org/themes/functionality/localization/)
 
 
+
 ---
 
-[<< Précédent](menu.md) | [Suivant >>](widget.md)
+[:back:](menu.md) | [:soon:](widget.md)

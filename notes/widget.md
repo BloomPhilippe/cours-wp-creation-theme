@@ -67,6 +67,9 @@ J'ai placé le widget dans [index.php](../index.php)
 
 ![cover](../images/widget-6.png)
 
+
+
+
 ---
 
-[<< Précédent](traduction.md)
+[:back:](traduction.md) | [:soon:](../README.md)
