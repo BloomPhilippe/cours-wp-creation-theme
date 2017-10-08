@@ -2,7 +2,7 @@
 
 ## Un thème WordPress est composé de plusieurs fichiers.
 
-### [style.css](style.css)
+### [style.css](../style.css)
 
 Le style.css possède les informations liées au thème tels que l’auteur, la version,
 le nom du thème, l’URL du thème, etc. Dans ce fichier CSS, il n’y aura aucun style
@@ -16,13 +16,13 @@ Theme Name est égale au nom de votre thème pour l'affichage dans le back-offic
 
 Template est égale au nom du dossier où se trouve votre thème.
 
-### [screenshot.png](screenshot.png)
+### [screenshot.png](../screenshot.png)
 
 Le screenshot.png est la couverture du thème lors de l’affichage dans la gestion
 des thèmes. Ce fichier n’est pas obligatoire mais c’est toujours mieux qu’il soit
 présent pour le différencier des autres thèmes installés.
 
-### [functions.php](functions.php)
+### [functions.php](../functions.php)
 
 Le functions.php est le controller de votre thème, il se compose des fonctions custom
 que vous créez, d’objets que vous allez modifier, de requêtes, etc.
@@ -30,9 +30,9 @@ que vous créez, d’objets que vous allez modifier, de requêtes, etc.
 Il permet d’alléger vos vues (templates) en y retirant la logique de
 programmation.
 
-### [header.php](header.php)
+### [header.php](../header.php)
 
-L'[header.php](header.php) contient le header de votre site, les balises html, body et head.
+L'[header.php](../header.php) contient le header de votre site, les balises html, body et head.
 On peut y placer également les balises style, script, etc...
 
 Dans ce fichier, il est important de ne pas oublier la function wp_head() qui permet d'inclure les fichiers CSS, JS et les meta tags propre à WordPress ou aux plugins installés.
@@ -50,9 +50,9 @@ Cette function ce place juste avant la fin de la balise </head>
 ```
 
 
-### [footer.php](footer.php)
+### [footer.php](../footer.php)
 
-L'[footer.php](footer.php) contient les closures de vos balises body et html. Il peut également contenir vos script, votre footer, etc...
+L'[footer.php](../footer.php) contient les closures de vos balises body et html. Il peut également contenir vos script, votre footer, etc...
 
 Dans ce fichier, il est important de ne pas oublier la function wp_footer() qui permet d'inclure les fichiers JS propre à WordPress ou aux plugins installés.
 
@@ -67,18 +67,18 @@ Cette function ce place juste avant la fin de la balise body
 Cette function inclut également la barre d'administration, lorsqu'on est connecté au WordPress et que l'on navigue sur le site, cette barre est située au dessus de la page.
 
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/barre-admin.png)
+![cover](../images/barre-admin.png)
 
 
-### Inclure [header.php](header.php) et [footer.php](footer.php)
+### Inclure [header.php](../header.php) et [footer.php](../footer.php)
 
-Afin d'inclure le fichier [header.php](header.php) dans vos templates, il suffit d'ajouter la function get_header() au début de votre template.
+Afin d'inclure le fichier [header.php](../header.php) dans vos templates, il suffit d'ajouter la function get_header() au début de votre template.
 
 ```
 <?php get_header(); ?>
 ```
 
-Afin d'inclure le fichier [footer.php](footer.php) dans vos templates, il suffit d'ajouter la function get_footer() à la fin de votre template.
+Afin d'inclure le fichier [footer.php](../footer.php) dans vos templates, il suffit d'ajouter la function get_footer() à la fin de votre template.
 
 ```
 <?php get_footer(); ?>
@@ -90,30 +90,30 @@ Afin d'inclure le fichier [footer.php](footer.php) dans vos templates, il suffit
 Les templates sont les fichiers qui permettent d'afficher un type de contenu (articles, pages, etc...).
 Ceux de base sont automatiquement repérés par WordPress.
 
-### [index.php](index.php)
+### [index.php](../index.php)
 
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
 créer d’autres en fonction de votre structure de page.
 
 **Ce fichier est obligatoire!**
 
-Par default, le template utilisé pour la page d'accueil du site est [index.php](index.php)
+Par default, le template utilisé pour la page d'accueil du site est [index.php](../index.php)
 
 
-### [archive.php](archive.php)
+### [archive.php](../archive.php)
 
 L’[archive.php](archive.php) est le template qui permet d'afficher une liste d'élément tels que les articles, catégorie, etc...
 Imaginons que dans le site, il y a une page blog avec une liste des actualités de votre site, c'est [archive.php](archive.php) qui sera utilisé.
 
 
-### [single.php](single.php)
+### [single.php](../single.php)
 
-Le [single.php](single.php) est le template qui permet d'afficher un article en particulier.
+Le [single.php](../single.php) est le template qui permet d'afficher un article en particulier.
 Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir plus de detail sur un article, le template utilisé pour afficher cette article sera [single.php](single.php).
 
-### [page.php](page.php)
+### [page.php](../page.php)
 
-Le [page.php](page.php) est le template qui permet d'afficher une page en particulier.
+Le [page.php](../page.php) est le template qui permet d'afficher une page en particulier.
 Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les détails de cette page, le template utilisé afficher cette page sera [page.php](page.php).
 
 ## La hierarchie des templates de base
@@ -124,7 +124,7 @@ Exemple :
 
 Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/wp-template-hierarchy.jpg)
+![cover](../images/wp-template-hierarchy.jpg)
 
 
 ## Les customs templates 
@@ -145,10 +145,10 @@ Pour tester si le template est pris en compte, il faut aller dans le back-office
 dans le formulaire d'ajout/edition d'une page et un select apparaîtra avec la liste de vos templates 
 comme sur l'image ci-dessous.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/select-template.png)
+![cover](../images/select-template.png)
 
 Si votre template n'est pas repéré par WordPress, veuillez vérifier les espaces entre "Template Name:" et "Contact" car s'il y en a de trop ou trop peu, le template n'est pas pris en compte.
 
 ---
 
-[<< Précédent](README.md) | [Suivant >>](template.md)
+[<< Précédent](../README.md) | [Suivant >>](template.md)
