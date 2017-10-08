@@ -5,7 +5,7 @@ Ceux de base sont automatiquement repérés par WordPress.
 
 
 
-### [index.php](../index.php)
+## [index.php](../index.php)
 
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
 créer d’autres en fonction de votre structure de page. 
