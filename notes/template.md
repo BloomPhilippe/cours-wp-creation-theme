@@ -3,6 +3,8 @@
 Les templates sont les fichiers qui permettent d'afficher un type de contenu (articles, pages, etc...).
 Ceux de base sont automatiquement repérés par WordPress.
 
+
+
 ### [index.php](../index.php)
 
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
