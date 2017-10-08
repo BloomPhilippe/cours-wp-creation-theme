@@ -21,7 +21,7 @@ Si aucun des templates de la hiérarchie ne correspond, ce sera ce fichier qui s
 
 ## [archive.php](../archive.php)
 
-[archive.php](../archive.php) est le template qui permet d'afficher une liste triée d'éléments tels que les articles, catégorie, etc...
+[archive.php](../archive.php) est le template qui permet d'afficher une **liste triée d'éléments** tels que les articles, catégorie, etc...
 Imaginons que dans le site, il y a une page blog avec une liste des actualités de votre site, c'est [archive.php](../archive.php) qui sera utilisé.
 
 
