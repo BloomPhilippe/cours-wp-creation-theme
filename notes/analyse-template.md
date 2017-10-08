@@ -62,11 +62,17 @@ Si vous désirez afficher les informations de l'objet courant (titre, contenu, i
 vous disposez de plusieurs fonctions très utiles :
 
 - get_the_ID() retourne l'id
+
 - get_the_title() retourne le titre
+
 - get_the_content() retourne le contenu texte
+
 - get_permalink() retourne l'URL pour voir l'article ou la page seule
+
 - get_the_post_thumbnail(get_the_ID(), $taille) retourne une balise img avec comme source votre image à la une.
-$taille est égale à la taille à afficher (thumbnail, medium, large, full)
+    $taille est égale à la taille à afficher (thumbnail, medium, large, full)
+    Exemple : `` echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' ); ``
+
 
 Pour plus de fonction, allez sur [Codex WordPress](https://codex.wordpress.org/fr:Fonctions_de_r%C3%A9f%C3%A9rence)
 

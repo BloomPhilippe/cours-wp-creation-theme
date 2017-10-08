@@ -1,9 +1,7 @@
 <?php
- /*
-  * Si aucun template n'est trouvé
-  */
-get_header(); ?>
-<?php dynamic_sidebar( 'text-bloc-1' ); ?>
+get_header();
+?>
+
 <?php while (have_posts()) :
     the_post();
     echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' );
