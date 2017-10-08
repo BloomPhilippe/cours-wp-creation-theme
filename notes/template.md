@@ -10,7 +10,7 @@ Ceux de base sont automatiquement repérés par WordPress.
 L’index.php est le template de base dans WordPress, cependant vous pouvez en
 créer d’autres en fonction de votre structure de page. 
 
-De base, il permet l'affichage de la page d'accueil de votre site.
+Si aucun des templates de la hiérarchie ne correspond, ce sera ce fichier qui sera choisi.
 
 **Ce fichier est obligatoire!**
 
