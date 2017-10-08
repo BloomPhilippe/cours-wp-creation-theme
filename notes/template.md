@@ -1,3 +1,64 @@
+# Les templates de base
+
+Les templates sont les fichiers qui permettent d'afficher un type de contenu (articles, pages, etc...).
+Ceux de base sont automatiquement repérés par WordPress.
+
+**Ce fichier est obligatoire!**
+
+Par default, le template utilisé pour la page d'accueil du site est [index.php](../index.php)
+
+
+## [archive.php](../archive.php)
+
+L’[archive.php](../archive.php) est le template qui permet d'afficher une liste d'élément tels que les articles, catégorie, etc...
+Imaginons que dans le site, il y a une page blog avec une liste des actualités de votre site, c'est [archive.php](../archive.php) qui sera utilisé.
+
+
+## [single.php](../single.php)
+
+Le [single.php](../single.php) est le template qui permet d'afficher un article en particulier.
+Imaginons que l'on navigue dans la liste d'article et que l'on clique pour voir plus de detail sur un article, le template utilisé pour afficher cette article sera [single.php](single.php).
+
+## [page.php](../page.php)
+
+Le [page.php](../page.php) est le template qui permet d'afficher une page en particulier.
+Imaginons que l'on clique sur un lien d'une page dans le site afin de voir les détails de cette page, le template utilisé afficher cette page sera [page.php](page.php).
+
+# La hierarchie des templates de base
+
+La hierarchie des templates dans WordPress est très importante, elle décide quel template utiliser.
+
+Exemple :
+
+Pour une catégorie, le template utilisé est category-$slug.php (slug est le nom de la catégorie)
+
+![cover](../images/wp-template-hierarchy.jpg)
+
+
+# Les customs templates 
+
+Les customs templates sont souvent créés pour une page en particulier avec une structure spécifique tels que la page contact, la page à propos, etc...
+Ils sont situés dans le **dossier** templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
+
+```php
+<?php
+/**
+ * Template Name: Contact
+ *
+ */
+```
+
+L'entête est composée du nom du template, exemple Contact.
+Pour tester si le template est pris en compte, il faut aller dans le back-office, 
+dans le formulaire d'ajout/edition d'une page et un select apparaîtra avec la liste de vos templates 
+comme sur l'image ci-dessous.
+
+![cover](../images/select-template.png)
+
+Si votre template n'est pas repéré par WordPress, veuillez vérifier les espaces entre "Template Name:" et "Contact" car s'il y en a de trop ou trop peu, le template n'est pas pris en compte.
+
+
+
 # Structure d'un template
 
 Les templates sont les fichiers qui permettent d'afficher un type de contenu.
