@@ -38,7 +38,7 @@ On peut y placer également les balises style, script, etc...
 Dans ce fichier, il est important de ne pas oublier la function wp_head() qui permet d'inclure les fichiers CSS, JS et les meta tags propre à WordPress ou aux plugins installés.
 Cette function ce place juste avant la fin de la balise </head>
 
-```
+```html
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -58,7 +58,7 @@ Dans ce fichier, il est important de ne pas oublier la function wp_footer() qui 
 
 Cette function ce place juste avant la fin de la balise body
 
-```
+```html
 <?php wp_footer();?>
 </body>
 </html>
@@ -74,13 +74,13 @@ Cette function inclut également la barre d'administration, lorsqu'on est connec
 
 Afin d'inclure le fichier [header.php](../header.php) dans vos templates, il suffit d'ajouter la function get_header() au début de votre template.
 
-```
+```php
 <?php get_header(); ?>
 ```
 
 Afin d'inclure le fichier [footer.php](../footer.php) dans vos templates, il suffit d'ajouter la function get_footer() à la fin de votre template.
 
-```
+```php
 <?php get_footer(); ?>
 ```
 
@@ -132,7 +132,7 @@ Pour une catégorie, le template utilisé est category-$slug.php (slug est le no
 Les customs templates sont souvent créés pour une page en particulier avec une structure spécifique tels que la page contact, la page à propos, etc...
 Ils sont situés dans le **dossier** templates et afin qu'ils soient repérer par WordPress, il faut ajouter l'entête ci-dessous dans chaques templates :
 
-```
+```php
 <?php
 /**
  * Template Name: Contact

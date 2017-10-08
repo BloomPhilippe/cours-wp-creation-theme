@@ -3,7 +3,7 @@
 Quand vous créez un themes dans WordPress, vous pourrez constater qu'il n'y a pas la possibilité de 
 créer et de modifier un menu dans le back-office.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/sans-menu.png)
+![cover](../images/sans-menu.png)
 
 
 La première chose à effectuer est de signaler à WordPress qu'il y aura un emplacement pour un ou plusieurs menus dans votre theme.
@@ -30,7 +30,7 @@ La valeur est la description de l'emplacement du menu.
 
 Maintenant, vous avez un nouvel onglet dans le back-office :
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu.png)
+![cover](../images/avec-menu.png)
 
 
 ## Créer votre menu via le backoffice.
@@ -38,15 +38,15 @@ Maintenant, vous avez un nouvel onglet dans le back-office :
 - Aller dans le backoffice (l'administration), dans apparence et menu.
 - Ecrire le nom de votre menu et cliquer sur créer menu
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-2.png)
+![cover](../images/avec-menu-2.png)
 
 - Lier vos pages, articles ou catégories à votre menu
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-3.png)
+![cover](../images/avec-menu-3.png)
 
 - Si vous avez plusieurs emplacement de menu (menu principal et menu footer), selectinner l'emplacement adéquat.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/avec-menu-4.png)
+![cover](../images/avec-menu-4.png)
 
 - Cliquer sur enregistrer le menu
 
@@ -58,7 +58,7 @@ Il y a plusieurs manières d'afficher un menu mais je vais vous montrer celle qu
 
 wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 
-```
+```php
 <?php
     $args = array(
         'menu' => 'Menu 1',
@@ -71,7 +71,7 @@ wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 
 wp_nav_menu() prend plusieurs paramètre mais le plus important est "menu" qui est égale au nom du menu à afficher ou à l'id du menu à afficher ou le slug du menu afficher.
 
-Vous pouvez visualiser mon exemple dans [header.php](header.php)
+Vous pouvez visualiser mon exemple dans [header.php](../header.php)
 
 Plus plus d'information, [cliquer ici](https://developer.wordpress.org/reference/functions/wp_nav_menu/)
 

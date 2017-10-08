@@ -15,7 +15,7 @@ Il y as deux manières d'effectuer ce signalement, via style.css ou via function
 
 La méthode via le style.css prendra le pas sur l'autre, elle a plus d'impact.
 
-#### Via le [styles.css](style.css)
+#### Via le [styles.css](../style.css)
 
 ```
 Text Domain:    wp-theme-base-translate
@@ -27,12 +27,12 @@ Avec cette méthode, WordPress va chercher vos traduction dans wp-content/langua
 **Je déconseille cette méthodes car si vous avez besoin de ce theme sur plusieurs site, il faudra créer à nouveau vos traductions!**
 **Donc si la ligne "Text Domain" se trouve dans votre thème, supprimer-la !**
 
-#### Via le [functions.php](functions.php)
+#### Via le [functions.php](../functions.php)
 
 Grâce au code ci-dessous, vous signalez à WordPress qu'il doit vérifier dans le dossier 
 languages de votre thème pour trouver les traductions lié au thème.
 
-**Cette manière ne sera pas prise en compte si vous l'avez déjà ajouté dans le** [styles.css](style.css)
+**Cette manière ne sera pas prise en compte si vous l'avez déjà ajouté dans le** [styles.css](../style.css)
 
 ```
 add_action( 'after_setup_theme', 'pdw_theme_setup' );
@@ -92,48 +92,48 @@ Il y a plusieurs manière de modifier ces fichiers, via un plugin comme Loco Tra
 
 - Installer Loco Translate
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-1.png)
+![cover](../images/trad-1.png)
 
 - Aller dans l'onglet Loco Translate, vous pouvez constater qu'il a repéré que votre thème à un emplacement pour des traductions.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-2.png)
+![cover](../images/trad-2.png)
 
 - Cliquer sur le nom de votre thème
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-3.png)
+![cover](../images/trad-3.png)
 
 - Cliquer sur Create template
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-5.png)
+![cover](../images/trad-5.png)
 
 - Cliquer encore sur Create template
 
 Créer un template permet de créer un fichier .pot qui sera une base pour vos futurs .po.
 Il possèdera l'ensemble de vos clé de traduction (msgid) ainsi vous n'auraez pas besoin de les écrire à chanque fichier .po (fr, en, nl, etc...)
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-6.png)
+![cover](../images/trad-6.png)
 
 - Cliquer sur New language pour ajouter un nouveau fichier de traduction pour une langue (.po) à votre thème
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-4.png)
+![cover](../images/trad-4.png)
 
 - Selectionner la langue (pour l'exemple français) et choisir la location (emplacement) de votre thème
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-7.png)
+![cover](../images/trad-7.png)
 
 - Cliquer sur Start tanslating et vous arriverez dans l'interface qui permet de traduire vos clé (msgid) et de générer vos fichiers .mo
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-8.png)
+![cover](../images/trad-8.png)
 
 - Dés que vous aller modifier une traduction, le bouton Save va changer de couleur, n'oubliez pas de cliquer dessus afin de mettre à jour le fichier .mo.
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-9.png)
+![cover](../images/trad-9.png)
 
 - Faite pareil pour chaque langue !
 
 ### 3. Ajouter vous tranductions dans vos templates
 
-Exemple de code ci-dessous que vous pouvez trouver dans [header.php](header.php) :
+Exemple de code ci-dessous que vous pouvez trouver dans [header.php](../header.php) :
 
 ```
 <?php _e('La traduction de Philippe Bloom', 'wp-theme-base-translate'); ?>
@@ -149,11 +149,11 @@ Le deuxième paramètre est le domaine de vos traductions ainsi WordPress sait d
 
 - Actuellement mon site est en français donc "La traduction de Philippe Bloom" est égale à sa valeur en français
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-10.png)
+![cover](../images/trad-10.png)
 
 - Aller dans le backoffice, dans réglages (settings), dans l'onglet générale et changer la langue du site
 
-![cover](https://github.com/BloomPhilippe/wp-base-theme/blob/master/images/trad-10.png)
+![cover](../images/trad-10.png)
 
 - Cliquer sur enregistrer et retourner sur le front
 

@@ -4,7 +4,7 @@ Les templates sont les fichiers qui permettent d'afficher un type de contenu.
 
 Voici un exemple d'une structure de base :
 
-```
+```php
 <?php
 get_header(); 
 ?>
@@ -12,9 +12,9 @@ get_header();
 <?php while (have_posts()) :
     the_post();
     ?>
-    <div class="jumbotron">
+    <div>
         <h1><?php echo  get_the_title(); ?> est la page d'index</h1>
-        <p class="lead">
+        <p>
             <?php
             echo get_the_content();
             ?>
@@ -35,7 +35,7 @@ get_footer();
 Un template commence toujours par get_header().
 get_header() permet d'inclure le fichier header.php
 
-```
+```php
 <?php
 get_header(); 
 ?>

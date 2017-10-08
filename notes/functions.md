@@ -1,6 +1,6 @@
 # Le functions.php
 
-Le [functions.php](functions.php) est considéré comme un controller global, un helper de vue, un service, etc... Il porte de multiples casquettes!
+Le [functions.php](../functions.php) est considéré comme un controller global, un helper de vue, un service, etc... Il porte de multiples casquettes!
 
 - Il permet de créer des classes, des fonctions et des variables utilisables dans vos templates.
 
@@ -27,7 +27,7 @@ Tous les exemples ci-dessous se trouve dans d'autre chapitre avec un complément
 
 - Signaler à WordPress que vous avec des menus
 
-```
+```php
 register_nav_menus(array(
     'main-menu' => __('Menu primaire', 'menu-primaire')
 ));
@@ -35,7 +35,7 @@ register_nav_menus(array(
 
 - Ajouter des fichiers Javascript et CSS
 
-```
+```php
     function base_theme_enqueue_styles()
     {
  
@@ -49,13 +49,13 @@ register_nav_menus(array(
 
 - Ajouter dans le back-office la possibilité d'ajouter une image à vos pages
 
-```
+```php
 add_theme_support( 'post-thumbnails' );
 ```
 
 - Ajouter des nouveaux types de contenu (article, page, etc...)
 
-```
+```php
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
     register_post_type( 'formation',
@@ -73,7 +73,7 @@ function create_post_type() {
 
 - Signaler à WordPress à que votre thème possède des widget
 
-```
+```php
 function wp_base_theme_widgets_init() {
 
     register_sidebar( array(
@@ -95,7 +95,7 @@ Les filtres permettent de modifier un fonction existante dans WordPress
 
 Exemple:
 
-```
+```php
 add_filter( 'the_title', function( $title ) { return '<strong>' . $title . '</strong>'; } );
 ```
 
@@ -108,7 +108,7 @@ Dans WordPress, vous pouvez executer vos fonctions à un moment précis, lors d'
 
 Exemple:
 
-```
+```php
 function monAction(){
 	
 	echo 'toto';
