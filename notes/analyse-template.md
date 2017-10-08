@@ -28,7 +28,7 @@ get_footer();
 ?>
 ```
 
-# Décorticons note exemple ci-dessus!
+# Décorticons notre exemple ci-dessus!
 
 ## **get_header()**
 
