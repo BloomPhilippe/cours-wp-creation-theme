@@ -86,4 +86,4 @@ get_footer() permet d'inclure le fichier footer.php
 
 ---
 
-[:back:](template.md) | [:soon:](template-custom.md)
+[:back:](template.md) | [:soon:](fields.md)

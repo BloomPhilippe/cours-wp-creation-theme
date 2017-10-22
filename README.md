@@ -7,6 +7,10 @@ Je vais vous expliquer comment créer un thème de base en WordPress.
 
 1. [Structure](notes/structure.md)
 2. [Les templates](notes/template.md)
+    1. [Liste des templates & hierarchie](notes/template.md)
+    2. [Structure template](notes/analyse-template.md)
+    3. [Les champs](notes/fields.md)
+    4. [Template custom](notes/template-custom.md)
 3. [Le functions.php](notes/functions.md)
 4. [Assets (js et css)](notes/assets.md)
 5. [Menu](notes/menu.md)
