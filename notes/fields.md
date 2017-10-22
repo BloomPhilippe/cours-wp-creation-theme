@@ -101,6 +101,34 @@
   <?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail', true)[0]; ?>
   ````
 
+- le nom de l'auteur
+
+  Utilisation :
+  
+  ````php
+  <?php echo get_the_author(); ?>
+  ````
+
+- le date de création
+
+  Utilisation :
+  
+  ````php
+  <?php echo get_the_date( 'l F j, Y' ); ?>
+  ````
+
+
+- Les champs catégories
+
+  ![cover](../videos/post-category.gif)
+
+  Utilisation :
+  
+  ````php
+  <?php get_the_category(); ?>
+  ````
+  
+  **Attention, cette fonction retourne un tableau avec des objets donc il faut faire un ``foreach``**
 
 
 # Les champs customs
