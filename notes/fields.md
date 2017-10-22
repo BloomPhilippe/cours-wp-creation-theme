@@ -117,7 +117,6 @@
   <?php echo get_the_date( 'l F j, Y' ); ?>
   ````
 
-
 - Les champs catégories
 
   ![cover](../videos/post-category.gif)
@@ -130,6 +129,25 @@
   
   **Attention, cette fonction retourne un tableau avec des objets donc il faut faire un ``foreach``**
 
+  
+- Les champs personalisés
+
+  ![cover](../videos/post-personalise.gif)
+
+  Utilisation :
+  
+  ````php
+  <?php get_post_custom_values('nom_du_champ', get_the_ID()); ?>
+  ````
+  
+  **Attention, cette fonction retourne un tableau donc il faut faire un ``foreach``**
+  
+  Ou voici un exemple :
+ 
+  ````php
+  <?php $text = implode (", ", get_post_custom_values('nom_du_champ', get_the_ID())); ?>
+  ````
+  
 
 # Les champs customs
 
