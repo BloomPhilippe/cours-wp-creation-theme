@@ -46,6 +46,25 @@
   <?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail', true)[0]; ?>
   ````
     
+- Les champs personalisés
+
+  ![cover](../videos/post-personalise.gif)
+
+  Utilisation :
+  
+  ````php
+  <?php get_post_custom_values('nom_du_champ', get_the_ID()); ?>
+  ````
+  
+  **Attention, cette fonction retourne un tableau donc il faut faire un ``foreach``**
+  
+  Ou voici un exemple :
+ 
+  ````php
+  <?php echo implode(", ", get_post_custom_values('nom_du_champ', get_the_ID())); ?>
+
+
+
 
 ## Les articles (post)
 
