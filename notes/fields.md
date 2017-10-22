@@ -1,6 +1,10 @@
-## Les champs de bases
+# Les champs de bases
 
-## Les champs customs
+## Les pages
+
+## Les articles (post)
+
+# Les champs customs
 
 
 
