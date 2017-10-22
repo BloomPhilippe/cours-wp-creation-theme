@@ -145,7 +145,7 @@
   Ou voici un exemple :
  
   ````php
-  <?php $text = implode (", ", get_post_custom_values('nom_du_champ', get_the_ID())); ?>
+  <?php echo implode(", ", get_post_custom_values('nom_du_champ', get_the_ID())); ?>
   ````
   
 
