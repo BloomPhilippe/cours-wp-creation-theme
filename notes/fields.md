@@ -77,6 +77,16 @@
   <?php echo get_the_content(); ?>
 
 
+- le champ résumé (extrait)
+
+  ![cover](../videos/post-extrait.gif)
+
+  Utilisation :
+  
+  ````php
+  <?php echo get_the_excerpt(); ?>
+
+
 - le champ image
 
   Utilisation avec balise ``<img>`` :
