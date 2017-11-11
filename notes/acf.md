@@ -55,11 +55,14 @@ Elles permettent de liées les champs un type de contenu :
 
 ![video](../videos/acf-part-5-wysiwyg.gif)
 
-- Champ WYSIWYG
+- Champ répéteur
 
-![video](../videos/acf-part-5-wysiwyg.gif)
+![video](../videos/acf-part-5-repeat.gif)
 
-**Lien vers la documentation** [ICI](https://www.advancedcustomfields.com/resources/)
+L'exemple ci-dessus est avec une image et un texte mais vous pouvez mettre n'import quel champ.
+
+
+**Lien vers plus d'exemple** [ICI](https://www.advancedcustomfields.com/resources/)
 
 
 ### Démonstration complète
