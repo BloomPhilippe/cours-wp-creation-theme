@@ -87,6 +87,7 @@ Ensuite, allez dans une page au hasard et remplissez vos nouveaux champs.
 
 Lorsque vous utilisez la fonction ```get_field('nom_du_champ')```, le premier paramètre de la fonction est le nom du champ (pas le label).
 
+![acf](../images/acf-name.png)
 
 - Champ texte
 
