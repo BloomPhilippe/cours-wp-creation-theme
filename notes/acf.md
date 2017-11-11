@@ -79,6 +79,12 @@ Ensuite, allez dans une page au hasard et remplissez vos nouveaux champs.
 
 ![video](../videos/acf-remplir.gif)
 
+**_N'oubliez pas de sauver!_**
+
+
+
+
+
 ---
 
 [:back:](fields.md) | [:soon:](template-custom.md)
