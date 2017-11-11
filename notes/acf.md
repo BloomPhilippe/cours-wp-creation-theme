@@ -18,21 +18,21 @@ Vous troverez le lien ci-dessous.
 
 ## Créer un groupe de champs
 
-### 1 - Cliquer sur l'onglet ACF ou Custom fieds
+### 1. Cliquer sur l'onglet ACF ou Custom fieds
 
 ![video](../videos/acf-part-1.gif)
 
-### 2 - Cliquer sur le bouton Ajouter
+### 2. Cliquer sur le bouton Ajouter
 
 ![video](../videos/acf-part-2.gif)
 
-### 3 - Remplir le champ titre
+### 3. Remplir le champ titre
 
 ![video](../videos/acf-part-3.gif)
 
 **Celui-ci est très important et doit être le plus explicite possible.**
 
-### 4 - Choisissez à qui vos champs seront liés (règles)
+### 4. Choisissez à qui vos champs seront liés (règles)
 
 ![video](../videos/acf-part-4.gif)
 
@@ -45,9 +45,15 @@ Elles permettent de liées les champs un type de contenu :
 - A un template
 - Etc...
 
-### 5 - Cliquer sur + Ajouter pour ajouter les champs
+### 5. Cliquer sur + Ajouter pour ajouter les champs
 
-![video](../videos/acf-part-5.gif)
+- Champ texte
+
+![video](../videos/acf-part-5-txt.gif)
+
+- Champ WYSIWYG
+
+![video](../videos/acf-part-5-wysiwyg.gif)
 
 
 ### Démonstration complète
