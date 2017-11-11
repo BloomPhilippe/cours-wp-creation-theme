@@ -83,7 +83,26 @@ Ensuite, allez dans une page au hasard et remplissez vos nouveaux champs.
 
 
 
+## Afficher les nouveaux champs
 
+Lorsque vous utilisez la fonction ```get_field('nom_du_champ')```, le premier paramètre de la fonction est le nom du champ (pas le label).
+
+
+- Champ texte
+
+[Lien vers la documentation](https://www.advancedcustomfields.com/resources/text/)
+
+- Champ WYSIWYG
+
+[Lien vers la documentation](https://www.advancedcustomfields.com/resources/wysiwyg-editor/)
+
+- Champ image
+
+[Lien vers la documentation](https://www.advancedcustomfields.com/resources/image/)
+
+- Champ répéteur
+
+[Lien vers la documentation](https://www.advancedcustomfields.com/resources/repeater/)
 
 ---
 
