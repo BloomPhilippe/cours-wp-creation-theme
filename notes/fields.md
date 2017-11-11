@@ -1,5 +1,6 @@
 # Les champs de bases
 
+
 ## Les pages
 
 ![cover](../images/fields-1.png)
@@ -166,14 +167,12 @@
   ````php
   <?php echo implode(", ", get_post_custom_values('nom_du_champ', get_the_ID())); ?>
   ````
-  
 
-# Les champs customs avancés
 
 
 
 
 ---
 
-[:back:](analyse-template.md) | [:soon:](template-custom.md)
+[:back:](analyse-template.md) | [:soon:](acf.md)
 
