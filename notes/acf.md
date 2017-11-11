@@ -9,22 +9,48 @@ Les instructions qui suivent par du principe que vous possédez la version **PRO
 
 Cependant, vous avez déjà beaucoup de fonctionnalités avec la version gratuite!
 
-## 1 - Téléchareger & installer ACF PRO
+## Téléchareger & installer ACF PRO
 
 Vous troverez le lien ci-dessous.
 
 [ACF PRO](https://www.advancedcustomfields.com/pro/)
 
 
-## 2 - Créer un groupe de champs
+## Créer un groupe de champs
 
-- Cliquer sur l'onglet ACF ou Custom fieds
-- Cliquer sur le bouton Ajouter
-- Remplir le champ titre, celui-ci est très important et doit être le plus explicite possible.
-- Choisissez à qui vos champs seront liés (règles)
-- Cliquer sur + Ajouter pour ajouter les champs
+### 1 - Cliquer sur l'onglet ACF ou Custom fieds
 
-**Démonstration vidéo**
+![video](../videos/acf-part-1.gif)
+
+### 2 - Cliquer sur le bouton Ajouter
+
+![video](../videos/acf-part-2.gif)
+
+### 3 - Remplir le champ titre
+
+![video](../videos/acf-part-3.gif)
+
+**Celui-ci est très important et doit être le plus explicite possible.**
+
+### 4 - Choisissez à qui vos champs seront liés (règles)
+
+![video](../videos/acf-part-4.gif)
+
+Les règles sont très importantes !
+
+Elles permettent de liées les champs un type de contenu :
+
+- A toutes les pages
+- A tous les articles
+- A un template
+- Etc...
+
+### 5 - Cliquer sur + Ajouter pour ajouter les champs
+
+![video](../videos/acf-part-5.gif)
+
+
+### Démonstration complète
 
 ![video](../videos/acf-1.gif)
 
