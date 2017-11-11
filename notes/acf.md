@@ -18,6 +18,10 @@ Vous troverez le lien ci-dessous.
 
 ## Créer un groupe de champs
 
+### Démonstration complète
+
+![video](../videos/acf-1.gif)
+
 ### 1. Cliquer sur l'onglet ACF ou Custom fieds
 
 ![video](../videos/acf-part-1.gif)
@@ -65,9 +69,15 @@ L'exemple ci-dessus est avec une image et un texte mais vous pouvez mettre n'imp
 **Lien vers plus d'exemple** [ICI](https://www.advancedcustomfields.com/resources/)
 
 
-### Démonstration complète
+## Remplir les nouveaux champs
 
-![video](../videos/acf-1.gif)
+Dans l'exemple précedent, j'ai créé un groupe de champs lié à **toutes** les pages.
+
+Faites pareil !
+
+Ensuite, allez dans une page au hasard et remplissez vos nouveaux champs.
+
+![video](../videos/acf-remplir.gif)
 
 ---
 
