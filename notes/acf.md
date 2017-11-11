@@ -55,6 +55,12 @@ Elles permettent de liées les champs un type de contenu :
 
 ![video](../videos/acf-part-5-wysiwyg.gif)
 
+- Champ WYSIWYG
+
+![video](../videos/acf-part-5-wysiwyg.gif)
+
+**Lien vers la documentation** [ICI](https://www.advancedcustomfields.com/resources/)
+
 
 ### Démonstration complète
 
