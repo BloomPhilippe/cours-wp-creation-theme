@@ -20,6 +20,23 @@ register_nav_menus(
         'footer-menu' => 'Description du menu footer',
     )
 );
+
+// Version bootstrap
+function add_additional_class_on_li($classes, $item, $args)
+{
+    $classes[] = 'nav-item';
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 0, 3);
+
+function add_class_a($atts)
+{
+    $atts['class'] = "nav-link";
+    return $atts;
+}
+
+add_filter('nav_menu_link_attributes', 'add_class_a', 100, 1);
 ```
 
 la fonction register_nav_menus() signale à WordPress qu'il y aura des menus.
@@ -59,14 +76,15 @@ Il y a plusieurs manières d'afficher un menu mais je vais vous montrer celle qu
 wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 
 ```php
-<?php
-    $args = array(
-        'menu' => 'Menu 1',
-        'container' => 'ul',
-        'menu_class' => 'nav navbar-nav',
-    );
-    wp_nav_menu($args);
-?>
+     <?php
+     $args = array(
+         'menu' => 'Menu 1',
+         'container_class' => false,
+         'items_wrap' => '%3$s',
+         'container' => false,
+     );
+     wp_nav_menu($args);
+     ?>
 ```
 
 wp_nav_menu() prend plusieurs paramètre mais le plus important est "menu" qui est égale au nom du menu à afficher ou à l'id du menu à afficher ou le slug du menu afficher.
