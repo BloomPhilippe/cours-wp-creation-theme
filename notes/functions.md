@@ -89,6 +89,30 @@ function wp_base_theme_widgets_init() {
 add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
 ```
 
+- Intercepter une soumission d'un formulaire et rediriger sur une autre page
+
+```
+/*
+ * Si pas le droit de créer de fichier, créer au préalable
+ * Ensuite donner la permission suffisante au fichier
+ */
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if(isset($_POST['form'])){
+        switch ($_POST['form']) {
+            case "contact":
+                $_SESSION["formSubmit"] = "Données reçues avec succès !";
+                $log = fopen(__DIR__."/logs/log.txt", "w");
+                $txt = date("Y-m-d H:i:s"). " " . $_POST['form'] . " \n";
+                fwrite($log, $txt);
+                fclose($log);
+                wp_redirect(get_permalink(39));
+                exit;
+                break;
+        }
+    }
+}
+```
+
 ## Les filtres WordPress
 
 Les filtres permettent de modifier un fonction existante dans WordPress
