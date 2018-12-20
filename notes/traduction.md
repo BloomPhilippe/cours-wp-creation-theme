@@ -24,9 +24,6 @@ Text Domain:    wp-theme-base-translate
 wp-theme-base-translate permet au moment d'afficher une traduction, de dire à WordPress où trouver les traductions...
 Avec cette méthode, WordPress va chercher vos traduction dans wp-content/languages/themes .
 
-**Je déconseille cette méthodes car si vous avez besoin de ce theme sur plusieurs site, il faudra créer à nouveau vos traductions!**
-**Donc si la ligne "Text Domain" se trouve dans votre thème, supprimer-la !**
-
 #### Via le [functions.php](../functions.php)
 
 Grâce au code ci-dessous, vous signalez à WordPress qu'il doit vérifier dans le dossier 
