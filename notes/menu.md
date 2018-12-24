@@ -78,7 +78,7 @@ wp_nav_menu() va chercher les éléments de votre menu et afficher celui-ci.
 ```php
      <?php
      $args = array(
-         'menu' => 'Menu 1',
+         'theme_location' => 'main',
          'container_class' => false,
          'items_wrap' => '%3$s',
          'container' => false,
