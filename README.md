@@ -2,7 +2,6 @@
 
 Je vais vous expliquer comment créer un thème de base en WordPress.
 
-
 ## Table des matières
 
 1. [Structure](notes/structure.md)
