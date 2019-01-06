@@ -20,5 +20,14 @@ get_header();
     </div>
     <?php
 endwhile; ?>
+
+<?php
+the_posts_pagination( array(
+    'mid_size' => 2,
+    'prev_text' => __( '<span aria-hidden="true">&laquo;</span>', 'textdomain' ),
+    'next_text' => __( '<span aria-hidden="true">&raquo;</span>', 'textdomain' ),
+    'screen_reader_text' => ' ',
+) );
+?>
 <?php get_footer(); ?>
 
