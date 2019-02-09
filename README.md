@@ -1,4 +1,4 @@
-# Thème de base WordPress
+# Cours WordPress - création d'un thème
 
 Je vais vous expliquer comment créer un thème de base en WordPress.
 
