@@ -16,5 +16,5 @@ Je vais vous expliquer comment créer un thème de base en WordPress.
 5. [Menu](notes/menu.md)
 6. [Traduction](notes/traduction.md)
 7. [Les widgets](notes/widget.md)
-8. [Les blocs Gutenberg]
+8. [Les blocs Gutenberg](https://fr.wordpress.org/gutenberg/)
     1. [Créer un bloc custom](https://www.youtube.com/watch?v=c-QPx264kcM)
